@@ -1,0 +1,682 @@
+[
+  {
+    "text": "1. When was Babur born?",
+    "options": [
+      { "text": "1483", "value": 1 },
+      { "text": "1480", "value": -0.33 },
+      { "text": "1490", "value": -0.33 },
+      { "text": "1485", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "2. From which two famous rulers was Babur descended?",
+    "options": [
+      { "text": "Timur and Genghis Khan", "value": 1 },
+      { "text": "Akbar and Babur", "value": -0.33 },
+      { "text": "Sher Shah and Humayun", "value": -0.33 },
+      { "text": "Hemu and Rana Sanga", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "3. What kingdom did Babur inherit at the age of 12?",
+    "options": [
+      { "text": "Fergana", "value": 1 },
+      { "text": "Kabul", "value": -0.33 },
+      { "text": "Delhi", "value": -0.33 },
+      { "text": "Ghazni", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "4. Who invited Babur to invade India?",
+    "options": [
+      { "text": "Daulat Khan Lodi", "value": 1 },
+      { "text": "Rana Sanga", "value": -0.33 },
+      { "text": "Ibrahim Lodi", "value": -0.33 },
+      { "text": "Hemu", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "5. Which battle marked the beginning of the Mughal Empire in India?",
+    "options": [
+      { "text": "First Battle of Panipat", "value": 1 },
+      { "text": "Battle of Khanua", "value": -0.33 },
+      { "text": "Battle of Ghaghra", "value": -0.33 },
+      { "text": "Battle of Haldighati", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "6. Who was the ruler defeated by Babur in the First Battle of Panipat?",
+    "options": [
+      { "text": "Ibrahim Lodi", "value": 1 },
+      { "text": "Sher Shah Suri", "value": -0.33 },
+      { "text": "Rana Sanga", "value": -0.33 },
+      { "text": "Hemu", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "7. What advantage did Babur have in the Battle of Panipat?",
+    "options": [
+      { "text": "Superior artillery and tactics", "value": 1 },
+      { "text": "Cavalry numbers", "value": -0.33 },
+      { "text": "Larger army", "value": -0.33 },
+      { "text": "Terrain knowledge", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "8. Which battle did Babur fight against Rana Sanga?",
+    "options": [
+      { "text": "Battle of Khanua", "value": 1 },
+      { "text": "Battle of Panipat", "value": -0.33 },
+      { "text": "Battle of Ghaghra", "value": -0.33 },
+      { "text": "Battle of Haldighati", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "9. What happened in the Battle of Khanua?",
+    "options": [
+      { "text": "Babur defeated Rana Sanga and consolidated Mughal power", "value": 1 },
+      { "text": "Babur lost to Rana Sanga", "value": -0.33 },
+      { "text": "Babur captured Bengal", "value": -0.33 },
+      { "text": "Babur allied with Hemu", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "10. Which territories did Babur capture in the Ghaghra battle?",
+    "options": [
+      { "text": "Eastern Bihar and Bengal", "value": 1 },
+      { "text": "Punjab", "value": -0.33 },
+      { "text": "Kashmir", "value": -0.33 },
+      { "text": "Malwa", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "11. Who was Humayun's father?",
+    "options": [
+      { "text": "Babur", "value": 1 },
+      { "text": "Akbar", "value": -0.33 },
+      { "text": "Sher Shah Suri", "value": -0.33 },
+      { "text": "Ibrahim Lodi", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "12. What does the name Humayun mean?",
+    "options": [
+      { "text": "Fortunate or Blessed", "value": 1 },
+      { "text": "Powerful", "value": -0.33 },
+      { "text": "Brave", "value": -0.33 },
+      { "text": "Wise", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "13. When did Humayun first rule the Mughal Empire?",
+    "options": [
+      { "text": "1530–1540", "value": 1 },
+      { "text": "1526–1530", "value": -0.33 },
+      { "text": "1550–1555", "value": -0.33 },
+      { "text": "1540–1555", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "14. When did Humayun regain the throne after exile?",
+    "options": [
+      { "text": "1555", "value": 1 },
+      { "text": "1550", "value": -0.33 },
+      { "text": "1545", "value": -0.33 },
+      { "text": "1560", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "15. Who defeated Humayun at Chausa?",
+    "options": [
+      { "text": "Sher Shah Suri", "value": 1 },
+      { "text": "Ibrahim Lodi", "value": -0.33 },
+      { "text": "Rana Sanga", "value": -0.33 },
+      { "text": "Babur", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "16. Who defeated Humayun at Kannauj?",
+    "options": [
+      { "text": "Sher Shah Suri", "value": 1 },
+      { "text": "Rana Sanga", "value": -0.33 },
+      { "text": "Babur", "value": -0.33 },
+      { "text": "Ibrahim Lodi", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "17. To which country did Humayun flee after losing to Sher Shah?",
+    "options": [
+      { "text": "Persia (Safavid Empire)", "value": 1 },
+      { "text": "Afghanistan", "value": -0.33 },
+      { "text": "Mewar", "value": -0.33 },
+      { "text": "Gujarat", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "18. Who helped Humayun regain the throne?",
+    "options": [
+      { "text": "Persian support and military aid", "value": 1 },
+      { "text": "Rana Pratap", "value": -0.33 },
+      { "text": "Akbar", "value": -0.33 },
+      { "text": "Ibrahim Lodi", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "19. How did Humayun die in 1556?",
+    "options": [
+      { "text": "Fell from the stairs of his library", "value": 1 },
+      { "text": "In battle", "value": -0.33 },
+      { "text": "Poisoned", "value": -0.33 },
+      { "text": "Natural causes", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "20. Who succeeded Humayun after his death?",
+    "options": [
+      { "text": "Akbar", "value": 1 },
+      { "text": "Babur", "value": -0.33 },
+      { "text": "Shah Jahan", "value": -0.33 },
+      { "text": "Aurangzeb", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "21. Who was Sher Shah Suri?",
+    "options": [
+      { "text": "Afghan ruler who briefly interrupted Mughal rule", "value": 1 },
+      { "text": "Mughal emperor", "value": -0.33 },
+      { "text": "Rajput king", "value": -0.33 },
+      { "text": "Persian general", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "22. What was the significance of the Grand Trunk Road?",
+    "options": [
+      { "text": "Connected major regions for trade and administration", "value": 1 },
+      { "text": "Military training route", "value": -0.33 },
+      { "text": "Pilgrimage path only", "value": -0.33 },
+      { "text": "Temporary route for armies", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "23. Which areas did the Grand Trunk Road connect?",
+    "options": [
+      { "text": "From Bengal to Peshawar", "value": 1 },
+      { "text": "Delhi to Agra only", "value": -0.33 },
+      { "text": "Kabul to Kashmir", "value": -0.33 },
+      { "text": "Malwa to Gujarat", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "24. What was Sher Shah’s contribution to revenue administration?",
+    "options": [
+      { "text": "Standardized measurement and systematic land revenue (Zabt system)", "value": 1 },
+      { "text": "Collected arbitrary taxes", "value": -0.33 },
+      { "text": "No reforms", "value": -0.33 },
+      { "text": "Reduced army size", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "25. How did Sher Shah strengthen the army?",
+    "options": [
+      { "text": "Organized a strong infantry, cavalry, and artillery system", "value": 1 },
+      { "text": "Only used infantry", "value": -0.33 },
+      { "text": "Reduced soldiers", "value": -0.33 },
+      { "text": "Hired only mercenaries", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "26. What was Akbar's real name?",
+    "options": [
+      { "text": "Jalal-ud-din Muhammad", "value": 1 },
+      { "text": "Abul Fazl", "value": -0.33 },
+      { "text": "Humayun", "value": -0.33 },
+      { "text": "Babur", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "27. How old was Akbar when he became emperor?",
+    "options": [
+      { "text": "13 years", "value": 1 },
+      { "text": "16 years", "value": -0.33 },
+      { "text": "18 years", "value": -0.33 },
+      { "text": "20 years", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "28. Who was Akbar’s guardian and tutor?",
+    "options": [
+      { "text": "Bairam Khan", "value": 1 },
+      { "text": "Abul Fazl", "value": -0.33 },
+      { "text": "Todar Mal", "value": -0.33 },
+      { "text": "Raja Man Singh", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "29. Which Afghan ruler captured Delhi before Akbar’s rule?",
+    "options": [
+      { "text": "Hemu", "value": 1 },
+      { "text": "Sher Shah Suri", "value": -0.33 },
+      { "text": "Ibrahim Lodi", "value": -0.33 },
+      { "text": "Daulat Khan Lodi", "value": -0.33 }
+    ]
+  },
+  {
+    "text": "30. Which battle in 1556 restored Mughal control over Delhi and Agra?",
+    "options": [
+      { "text": "Second Battle of Panipat", "value": 1 },
+      { "text": "Battle of Haldighati", "value": -0.33 },
+      { "text": "Battle of Khanua", "value": -0.33 },
+      { "text": "Battle of Ghaghra", "value": -0.33 }
+    ]
+  }
+  // Add questions 31 to 100 here in the same format, e.g.:
+  // {
+  //   "text": "31. Your question text?",
+  //   "options": [
+  //     { "text": "Correct answer", "value": 1 },
+  //     { "text": "Incorrect answer 1", "value": -0.33 },
+  //     { "text": "Incorrect answer 2", "value": -0.33 },
+  //     { "text": "Incorrect answer 3", "value": -0.33 }
+  //   ]
+  // },
+  
+]<div class="question">
+  <p>13. When did Humayun first rule the Mughal Empire?</p>
+  <ul>
+    <li><input type="radio" name="q13" value="1">1530–1540</li>
+    <li><input type="radio" name="q13" value="-0.33">1526–1530</li>
+    <li><input type="radio" name="q13" value="-0.33">1550–1555</li>
+    <li><input type="radio" name="q13" value="-0.33">1540–1555</li>
+  </ul>
+</div>
+
+<!-- Question 14 -->
+<div class="question">
+  <p>14. When did Humayun regain the throne after exile?</p>
+  <ul>
+    <li><input type="radio" name="q14" value="1">1555</li>
+    <li><input type="radio" name="q14" value="-0.33">1550</li>
+    <li><input type="radio" name="q14" value="-0.33">1545</li>
+    <li><input type="radio" name="q14" value="-0.33">1560</li>
+  </ul>
+</div>
+
+<!-- Question 15 -->
+<div class="question">
+  <p>15. Who defeated Humayun at Chausa?</p>
+  <ul>
+    <li><input type="radio" name="q15" value="1">Sher Shah Suri</li>
+    <li><input type="radio" name="q15" value="-0.33">Ibrahim Lodi</li>
+    <li><input type="radio" name="q15" value="-0.33">Rana Sanga</li>
+    <li><input type="radio" name="q15" value="-0.33">Babur</li>
+  </ul>
+</div>
+
+<!-- Question 16 -->
+<div class="question">
+  <p>16. Who defeated Humayun at Kannauj?</p>
+  <ul>
+    <li><input type="radio" name="q16" value="1">Sher Shah Suri</li>
+    <li><input type="radio" name="q16" value="-0.33">Rana Sanga</li>
+    <li><input type="radio" name="q16" value="-0.33">Babur</li>
+    <li><input type="radio" name="q16" value="-0.33">Ibrahim Lodi</li>
+  </ul>
+</div>
+
+<!-- Question 17 -->
+<div class="question">
+  <p>17. To which country did Humayun flee after losing to Sher Shah?</p>
+  <ul>
+    <li><input type="radio" name="q17" value="1">Persia (Safavid Empire)</li>
+    <li><input type="radio" name="q17" value="-0.33">Afghanistan</li>
+    <li><input type="radio" name="q17" value="-0.33">Mewar</li>
+    <li><input type="radio" name="q17" value="-0.33">Gujarat</li>
+  </ul>
+</div>
+
+<!-- Question 18 -->
+<div class="question">
+  <p>18. Who helped Humayun regain the throne?</p>
+  <ul>
+    <li><input type="radio" name="q18" value="1">Persian support and military aid</li>
+    <li><input type="radio" name="q18" value="-0.33">Rana Pratap</li>
+    <li><input type="radio" name="q18" value="-0.33">Akbar</li>
+    <li><input type="radio" name="q18" value="-0.33">Ibrahim Lodi</li>
+  </ul>
+</div>
+
+<!-- Question 19 -->
+<div class="question">
+  <p>19. How did Humayun die in 1556?</p>
+  <ul>
+    <li><input type="radio" name="q19" value="1">Fell from the stairs of his library</li>
+    <li><input type="radio" name="q19" value="-0.33">In battle</li>
+    <li><input type="radio" name="q19" value="-0.33">Poisoned</li>
+    <li><input type="radio" name="q19" value="-0.33">Natural causes</li>
+  </ul>
+</div>
+
+<!-- Question 20 -->
+<div class="question">
+  <p>20. Who succeeded Humayun after his death?</p>
+  <ul>
+    <li><input type="radio" name="q20" value="1">Akbar</li>
+    <li><input type="radio" name="q20" value="-0.33">Babur</li>
+    <li><input type="radio" name="q20" value="-0.33">Shah Jahan</li>
+    <li><input type="radio" name="q20" value="-0.33">Aurangzeb</li>
+  </ul>
+</div>
+
+<!-- Question 21 -->
+<div class="question">
+  <p>21. Who was Sher Shah Suri?</p>
+  <ul>
+    <li><input type="radio" name="q21" value="1">Afghan ruler who briefly interrupted Mughal rule</li>
+    <li><input type="radio" name="q21" value="-0.33">Mughal emperor</li>
+    <li><input type="radio" name="q21" value="-0.33">Rajput king</li>
+    <li><input type="radio" name="q21" value="-0.33">Persian general</li>
+  </ul>
+</div>
+
+<!-- Question 22 -->
+<div class="question">
+  <p>22. What was the significance of the Grand Trunk Road?</p>
+  <ul>
+    <li><input type="radio" name="q22" value="1">Connected major regions for trade and administration</li>
+    <li><input type="radio" name="q22" value="-0.33">Military training route</li>
+    <li><input type="radio" name="q22" value="-0.33">Pilgrimage path only</li>
+    <li><input type="radio" name="q22" value="-0.33">Temporary route for armies</li>
+  </ul>
+</div>
+
+<!-- Question 23 -->
+<div class="question">
+  <p>23. Which areas did the Grand Trunk Road connect?</p>
+  <ul>
+    <li><input type="radio" name="q23" value="1">From Bengal to Peshawar</li>
+    <li><input type="radio" name="q23" value="-0.33">Delhi to Agra only</li>
+    <li><input type="radio" name="q23" value="-0.33">Kabul to Kashmir</li>
+    <li><input type="radio" name="q23" value="-0.33">Malwa to Gujarat</li>
+  </ul>
+</div>
+
+<!-- Question 24 -->
+<div class="question">
+  <p>24. What was Sher Shah’s contribution to revenue administration?</p>
+  <ul>
+    <li><input type="radio" name="q24" value="1">Standardized measurement and systematic land revenue (Zabt system)</li>
+    <li><input type="radio" name="q24" value="-0.33">Collected arbitrary taxes</li>
+    <li><input type="radio" name="q24" value="-0.33">No reforms</li>
+    <li><input type="radio" name="q24" value="-0.33">Reduced army size</li>
+  </ul>
+</div>
+
+<!-- Question 25 -->
+<div class="question">
+  <p>25. How did Sher Shah strengthen the army?</p>
+  <ul>
+    <li><input type="radio" name="q25" value="1">Organized a strong infantry, cavalry, and artillery system</li>
+    <li><input type="radio" name="q25" value="-0.33">Only used infantry</li>
+    <li><input type="radio" name="q25" value="-0.33">Reduced soldiers</li>
+    <li><input type="radio" name="q25" value="-0.33">Hired only mercenaries</li>
+  </ul>
+</div>
+
+<!-- Question 26 -->
+<div class="question">
+  <p>26. What was Akbar's real name?</p>
+  <ul>
+    <li><input type="radio" name="q26" value="1">Jalal-ud-din Muhammad</li>
+    <li><input type="radio" name="q26" value="-0.33">Abul Fazl</li>
+    <li><input type="radio" name="q26" value="-0.33">Humayun</li>
+    <li><input type="radio" name="q26" value="-0.33">Babur</li>
+  </ul>
+</div>
+
+<!-- Question 27 -->
+<div class="question">
+  <p>27. How old was Akbar when he became emperor?</p>
+  <ul>
+    <li><input type="radio" name="q27" value="1">13 years</li>
+    <li><input type="radio" name="q27" value="-0.33">16 years</li>
+    <li><input type="radio" name="q27" value="-0.33">18 years</li>
+    <li><input type="radio" name="q27" value="-0.33">20 years</li>
+  </ul>
+</div>
+
+<!-- Question 28 -->
+<div class="question">
+  <p>28. Who was Akbar’s guardian and tutor?</p>
+  <ul>
+    <li><input type="radio" name="q28" value="1">Bairam Khan</li>
+    <li><input type="radio" name="q28" value="-0.33">Abul Fazl</li>
+    <li><input type="radio" name="q28" value="-0.33">Todar Mal</li>
+    <li><input type="radio" name="q28" value="-0.33">Raja Man Singh</li>
+  </ul>
+</div>
+
+<!-- Question 29 -->
+<div class="question">
+  <p>29. Which Afghan ruler captured Delhi before Akbar’s rule?</p>
+  <ul>
+    <li><input type="radio" name="q29" value="1">Hemu</li>
+    <li><input type="radio" name="q29" value="-0.33">Sher Shah Suri</li>
+    <li><input type="radio" name="q29" value="-0.33">Ibrahim Lodi</li>
+    <li><input type="radio" name="q29" value="-0.33">Daulat Khan Lodi</li>
+  </ul>
+</div>
+
+<!-- Question 30 -->
+<div class="question">
+  <p>30. Which battle in 1556 restored Mughal control over Delhi and Agra?</p>
+  <ul>
+    <li><input type="radio" name="q30" value="1">Second Battle of Panipat</li>
+    <li><input type="radio" name="q30" value="-0.33">Battle of Haldighati</li>
+    <li><input type="radio" name="q30" value="-0.33">Battle of Khanua</li>
+    <li><input type="radio" name="q30" value="-0.33">Battle of Ghaghra</li>
+  </ul>
+</div>
+
+<!-- Question 31 -->
+<div class="question">
+  <p>31. Which provinces did Akbar annex during his expansion?</p>
+  <ul>
+    <li><input type="radio" name="q31" value="1">Malwa, Gujarat, Bengal</li>
+    <li><input type="radio" name="q31" value="-0.33">Rajasthan only</li>
+    <li><input type="radio" name="q31" value="-0.33">Punjab only</li>
+    <li><input type="radio" name="q31" value="-0.33">Kashmir only</li>
+  </ul>
+</div>
+
+<!-- Question 32 -->
+<div class="question">
+  <p>32. Which northern territories did Akbar control?</p>
+  <ul>
+    <li><input type="radio" name="q32" value="1">Punjab, Delhi, Agra</li>
+    <li><input type="radio" name="q32" value="-0.33">Mewar only</li>
+    <li><input type="radio" name="q32" value="-0.33">Bengal only</li>
+    <li><input type="radio" name="q32" value="-0.33">Gujarat only</li>
+  </ul>
+</div>
+
+<!-- Question 33 -->
+<div class="question">
+  <p>33. Which southern region did Akbar annex?</p>
+  <ul>
+    <li><input type="radio" name="q33" value="1">Gujarat</li>
+    <li><input type="radio" name="q33" value="-0.33">Deccan</li>
+    <li><input type="radio" name="q33" value="-0.33">Mysore</li>
+    <li><input type="radio" name="q33" value="-0.33">Malwa</li>
+  </ul>
+</div>
+
+<!-- Question 34 -->
+<div class="question">
+  <p>34. Why did Akbar adopt a policy of friendship towards Rajputs?</p>
+  <ul>
+    <li><input type="radio" name="q34" value="1">To secure loyalty and political stability</li>
+    <li><input type="radio" name="q34" value="-0.33">To avoid trade conflicts</li>
+    <li><input type="radio" name="q34" value="-0.33">To promote religious conversion</li>
+    <li><input type="radio" name="q34" value="-0.33">Because of marital ties only</li>
+  </ul>
+</div>
+
+<!-- Question 35 -->
+<div class="question">
+  <p>35. Whom did Akbar marry among the Rajputs?</p>
+  <ul>
+    <li><input type="radio" name="q35" value="1">Jodha Bai (Mariam-uz-Zamani)</li>
+    <li><input type="radio" name="q35" value="-0.33">Rani Padmini</li>
+    <li><input type="radio" name="q35" value="-0.33">Rani Durgavati</li>
+    <li><input type="radio" name="q35" value="-0.33">Rani Karnavati</li>
+  </ul>
+</div>
+
+<!-- Question 36 -->
+<div class="question">
+  <p>36. Name the famous Rajput ruler who resisted Akbar.</p>
+  <ul>
+    <li><input type="radio" name="q36" value="1">Maharana Pratap</li>
+    <li><input type="radio" name="q36" value="-0.33">Raja Man Singh</li>
+    <li><input type="radio" name="q36" value="-0.33">Rana Sanga</li>
+    <li><input type="radio" name="q36" value="-0.33">Prithviraj Chauhan</li>
+  </ul>
+</div>
+
+<!-- Question 37 -->
+<div class="question">
+  <p>37. When did the Battle of Haldighati take place?</p>
+  <ul>
+    <li><input type="radio" name="q37" value="1">1576</li>
+    <li><input type="radio" name="q37" value="-0.33">1565</li>
+    <li><input type="radio" name="q37" value="-0.33">1580</li>
+    <li><input type="radio" name="q37" value="-0.33">1590</li>
+  </ul>
+</div>
+
+<!-- Question 38 -->
+<div class="question">
+  <p>38. Who led Akbar’s army in the Battle of Haldighati?</p>
+  <ul>
+    <li><input type="radio" name="q38" value="1">Man Singh</li>
+    <li><input type="radio" name="q38" value="-0.33">Todar Mal</li>
+    <li><input type="radio" name="q38" value="-0.33">Abul Fazl</li>
+    <li><input type="radio" name="q38" value="-0.33">Bairam Khan</li>
+  </ul>
+</div>
+
+<!-- Question 39 -->
+<div class="question">
+  <p>39. How many soldiers did Maharana Pratap command?</p>
+  <ul>
+    <li><input type="radio" name="q39" value="1">About 3,000</li>
+    <li><input type="radio" name="q39" value="-0.33">10,000</li>
+    <li><input type="radio" name="q39" value="-0.33">5,000</li>
+    <li><input type="radio" name="q39" value="-0.33">8,000</li>
+  </ul>
+</div>
+
+<!-- Question 40 -->
+<div class="question">
+  <p>40. What tactics did Maharana Pratap adopt after Haldighati?</p>
+  <ul>
+    <li><input type="radio" name="q40" value="1">Guerrilla warfare against Mughals</li>
+    <li><input type="radio" name="q40" value="-0.33">Formed alliances with Mughals</li>
+    <li><input type="radio" name="q40" value="-0.33">Abandoned Mewar</li>
+    <li><input type="radio" name="q40" value="-0.33">Fought open battle continuously</li>
+  </ul>
+</div>
+
+<!-- Question 41 -->
+<div class="question">
+  <p>41. What was the name of the hall where Akbar held religious discussions?</p>
+  <ul>
+    <li><input type="radio" name="q41" value="1">Ibadat Khana</li>
+    <li><input type="radio" name="q41" value="-0.33">Diwan-i-Khas</li>
+    <li><input type="radio" name="q41" value="-0.33">Sheesh Mahal</li>
+    <li><input type="radio" name="q41" value="-0.33">Naulakha</li>
+  </ul>
+</div>
+
+<!-- Question 42 -->
+<div class="question">
+  <p>42. What does Sulh-i-Kul mean?</p>
+  <ul>
+    <li><input type="radio" name="q42" value="1">Universal peace and tolerance</li>
+    <li><input type="radio" name="q42" value="-0.33">Religious conversion</li>
+    <li><input type="radio" name="q42" value="-0.33">Military conquest</li>
+    <li><input type="radio" name="q42" value="-0.33">Tax collection</li>
+  </ul>
+</div>
+
+<!-- Question 43 -->
+<div class="question">
+  <p>43. What was Din-i-Ilahi?</p>
+  <ul>
+    <li><input type="radio" name="q43" value="1">A syncretic religion introduced by Akbar</li>
+    <li><input type="radio" name="q43" value="-0.33">A Hindu festival</li>
+    <li><input type="radio" name="q43" value="-0.33">A tax system</li>
+    <li><input type="radio" name="q43" value="-0.33">A military rank</li>
+  </ul>
+</div>
+
+<!-- Question 44 -->
+<div class="question">
+  <p>44. Who assisted Akbar in framing governance under Din-i-Ilahi?</p>
+  <ul>
+    <li><input type="radio" name="q44" value="1">Abul Fazl</li>
+    <li><input type="radio" name="q44" value="-0.33">Todar Mal</li>
+    <li><input type="radio" name="q44" value="-0.33">Raja Man Singh</li>
+    <li><input type="radio" name="q44" value="-0.33">Birbal</li>
+  </ul>
+</div>
+
+<!-- Question 45 -->
+<div class="question">
+  <p>45. What were the key features of Din-i-Ilahi?</p>
+  <ul>
+    <li><input type="radio" name="q45" value="1">Tolerance, morality, loyalty to Akbar</li>
+    <li><input type="radio" name="q45" value="-0.33">Military training</li>
+    <li><input type="radio" name="q45" value="-0.33">Tax collection</li>
+    <li><input type="radio" name="q45" value="-0.33">Trade regulation</li>
+  </ul>
+</div>
+
+<!-- Question 46 -->
+<div class="question">
+  <p>46. Who was the supreme commander of the Mughal army?</p>
+  <ul>
+    <li><input type="radio" name="q46" value="1">Mir Bakshi</li>
+    <li><input type="radio" name="q46" value="-0.33">Wazir</li>
+    <li><input type="radio" name="q46" value="-0.33">Qazi</li>
+    <li><input type="radio" name="q46" value="-0.33">Subedar</li>
+  </ul>
+</div>
+
+<!-- Question 47 -->
+<div class="question">
+  <p>47. What was the role of Wazir?</p>
+  <ul>
+    <li><input type="radio" name="q47" value="1">In charge of finance</li>
+    <li><input type="radio" name="q47" value="-0.33">Chief justice</li>
+    <li><input type="radio" name="q47" value="-0.33">Military commander</li>
+    <li><input type="radio" name="q47" value="-0.33">Provincial governor</li>
+  </ul>
+</div>
+
+<!-- Question 48 -->
+<div class="question">
+  <p>48. What was the role of Diwan?</p>
+  <ul>
+    <li><input type="radio" name="q48" value="1">Revenue collection and administration</li>
+    <li><input type="radio" name="q48" value="-0.33">Religious affairs</li>
+    <li><input type="radio" name="q48" value="-0.33">Military training</li>
+    <li><input type="radio" name="q48" value="-0.33">Cultural patronage</li>
+  </ul>
+</div>
+
+<!-- Question 49 -->
+<div class="question">
+  <p>49. What was the role of Bakshi?</p>
+  <ul>
+    <li><input
