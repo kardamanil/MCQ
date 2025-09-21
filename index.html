@@ -5,26 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mughal History Quiz (100 Questions)</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1 { text-align: center; }
-    .question { margin-bottom: 20px; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { margin: 5px 0; }
-    button { padding: 10px 20px; font-size: 16px; display: block; margin: 20px auto; }
-    .result { margin-top: 20px; font-size: 18px; text-align: center; }
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      margin: 20px; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    h1 { 
+      text-align: center; 
+      color: #4a5568;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .controls {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .question { 
+      margin-bottom: 25px; 
+      padding: 20px;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      background: #f8fafc;
+      transition: all 0.3s ease;
+    }
+    
+    .question:hover {
+      border-color: #667eea;
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+    }
+    
+    .question p {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      color: #2d3748;
+    }
+    
+    ul { 
+      list-style-type: none; 
+      padding-left: 0; 
+    }
+    
+    li { 
+      margin: 8px 0; 
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+    
+    li:hover {
+      background-color: #edf2f7;
+    }
+    
+    input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+    
+    button { 
+      padding: 12px 24px; 
+      font-size: 16px; 
+      margin: 10px; 
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .submit-btn {
+      background: linear-gradient(135deg, #48bb78, #38a169);
+      color: white;
+    }
+    
+    .submit-btn:hover {
+      background: linear-gradient(135deg, #38a169, #2f855a);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(72, 187, 120, 0.4);
+    }
+    
+    .reset-btn {
+      background: linear-gradient(135deg, #ed8936, #dd6b20);
+      color: white;
+    }
+    
+    .reset-btn:hover {
+      background: linear-gradient(135deg, #dd6b20, #c05621);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(237, 137, 54, 0.4);
+    }
+    
+    .result { 
+      margin-top: 30px; 
+      font-size: 20px; 
+      text-align: center; 
+      padding: 20px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    
+    .result.success {
+      background: linear-gradient(135deg, #68d391, #48bb78);
+      color: white;
+    }
+    
+    .result.warning {
+      background: linear-gradient(135deg, #fbb6ce, #ed64a6);
+      color: white;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 4px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+    
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #4a5568;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 40px;
+      font-size: 18px;
+      color: #4a5568;
+    }
   </style>
 </head>
 <body>
-
-<h1>Mughal History Quiz (100 Questions)</h1>
-<form id="quizForm">
-  <!-- Questions will be dynamically added here -->
-  <button type="submit">Submit Quiz</button>
-</form>
-
-<div class="result" id="result"></div>
+<div class="container">
+  <h1>Mughal History Quiz</h1>
+  <div class="controls">
+    <button class="reset-btn" onclick="resetQuiz()">Reset & Shuffle</button>
+  </div>
+  
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  
+  <div class="loading" id="loading">Loading questions...</div>
+  
+  <form id="quizForm" style="display: none;">
+    <!-- Questions will be dynamically added here -->
+    <div style="text-align: center; margin-top: 30px;">
+      <button type="submit" class="submit-btn">Submit Quiz</button>
+    </div>
+  </form>
+  
+  <div class="result" id="result"></div>
+  <div class="stats" id="stats"></div>
+</div>
 
 <script>
+let questionsData = [];
+
 // Function to shuffle an array (Fisher-Yates shuffle)
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -34,70 +197,190 @@ function shuffleArray(array) {
   return array;
 }
 
-// Function to generate quiz from JSON data
-async function generateQuiz() {
+// Function to load questions from JSON file
+async function loadQuestions() {
   try {
     const response = await fetch('questions.json');
     if (!response.ok) throw new Error('Failed to load questions');
-    const questionsData = await response.json();
-    const form = document.getElementById('quizForm');
-    const submitButton = form.querySelector('button[type="submit"]');
-    form.innerHTML = ''; // Clear form
-
-    questionsData.forEach((q, index) => {
-      const questionDiv = document.createElement('div');
-      questionDiv.className = 'question';
-
-      const p = document.createElement('p');
-      p.textContent = q.text;
-      questionDiv.appendChild(p);
-
-      const ul = document.createElement('ul');
-      const shuffledOptions = shuffleArray([...q.options]);
-
-      shuffledOptions.forEach(opt => {
-        const li = document.createElement('li');
-        const input = document.createElement('input');
-        input.type = 'radio';
-        input.name = `q${index + 1}`;
-        input.value = opt.value;
-        li.appendChild(input);
-        li.appendChild(document.createTextNode(opt.text));
-        ul.appendChild(li);
-      });
-
-      questionDiv.appendChild(ul);
-      form.appendChild(questionDiv);
-    });
-
-    form.appendChild(submitButton);
-
-    // Attach evaluation logic
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      let score = 0;
-      const totalQuestions = questionsData.length;
-
-      for (let i = 1; i <= totalQuestions; i++) {
-        const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
-        if (selectedOption) {
-          score += parseFloat(selectedOption.value);
-        } else {
-          document.getElementById('result').innerHTML = 'Please answer all questions!';
-          return;
-        }
-      }
-
-      document.getElementById('result').innerHTML = `Your score: ${score.toFixed(2)} out of ${totalQuestions}`;
-    });
+    questionsData = await response.json();
+    
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('quizForm').style.display = 'block';
+    
+    generateQuiz();
   } catch (error) {
-    document.getElementById('result').innerHTML = `Error: ${error.message}`;
+    document.getElementById('loading').innerHTML = `Error loading questions: ${error.message}`;
   }
 }
 
-// Run quiz generation on load
-window.onload = generateQuiz;
-</script>
+// Function to generate quiz (only 10 random questions)
+function generateQuiz() {
+  const form = document.getElementById('quizForm');
+  const submitButton = form.querySelector('button[type="submit"]');
+  form.innerHTML = '';
 
+  // Shuffle questions array and take only 10 questions
+  const shuffledQuestions = shuffleArray([...questionsData]).slice(0, 10);
+
+  shuffledQuestions.forEach((q, index) => {
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'question';
+    
+    const p = document.createElement('p');
+    // Update question numbering to show 1-10 instead of array index
+    p.textContent = `${index + 1}. ${q.text.replace(/^\d+\.\s*/, '')}`;
+    questionDiv.appendChild(p);
+    
+    const ul = document.createElement('ul');
+    
+    // Shuffle options for each question
+    const shuffledOptions = shuffleArray([...q.options]);
+    
+    shuffledOptions.forEach(opt => {
+      const li = document.createElement('li');
+      const input = document.createElement('input');
+      input.type = 'radio';
+      input.name = `q${index + 1}`;
+      input.value = opt.value;
+      
+      li.appendChild(input);
+      li.appendChild(document.createTextNode(opt.text));
+      ul.appendChild(li);
+    });
+    
+    questionDiv.appendChild(ul);
+    form.appendChild(questionDiv);
+  });
+  
+  // Re-add submit button
+  const buttonDiv = document.createElement('div');
+  buttonDiv.style.textAlign = 'center';
+  buttonDiv.style.marginTop = '30px';
+  
+  const submitBtn = document.createElement('button');
+  submitBtn.type = 'submit';
+  submitBtn.className = 'submit-btn';
+  submitBtn.innerHTML = 'Submit Quiz';
+  
+  buttonDiv.appendChild(submitBtn);
+  form.appendChild(buttonDiv);
+  
+  // Update progress tracking
+  updateProgressTracking();
+}
+
+function updateProgressTracking() {
+  const totalQuestions = 10; // Fixed to 10 questions
+  let answeredQuestions = 0;
+  
+  const updateProgress = () => {
+    answeredQuestions = 0;
+    for (let i = 1; i <= totalQuestions; i++) {
+      if (document.querySelector(`input[name="q${i}"]:checked`)) {
+        answeredQuestions++;
+      }
+    }
+    
+    const progressFill = document.getElementById('progressFill');
+    const percentage = (answeredQuestions / totalQuestions) * 100;
+    progressFill.style.width = percentage + '%';
+    
+    const stats = document.getElementById('stats');
+    stats.innerHTML = `
+      <span>Questions Answered: ${answeredQuestions}/${totalQuestions}</span>
+      <span>Progress: ${Math.round(percentage)}%</span>
+    `;
+  };
+  
+  // Add event listeners to all radio buttons
+  const radioButtons = document.querySelectorAll('input[type="radio"]');
+  radioButtons.forEach(radio => {
+    radio.addEventListener('change', updateProgress);
+  });
+  
+  updateProgress(); // Initial call
+}
+
+// Function to reset and shuffle quiz
+function resetQuiz() {
+  if (questionsData.length === 0) {
+    loadQuestions();
+    return;
+  }
+  
+  const form = document.getElementById('quizForm');
+  const result = document.getElementById('result');
+  const stats = document.getElementById('stats');
+  const progressFill = document.getElementById('progressFill');
+  
+  // Clear previous results
+  result.innerHTML = '';
+  result.className = 'result';
+  stats.innerHTML = '';
+  progressFill.style.width = '0%';
+  
+  // Regenerate quiz with shuffled options
+  generateQuiz();
+}
+
+// Form submission handler
+document.addEventListener('DOMContentLoaded', function() {
+  loadQuestions();
+  
+  document.getElementById('quizForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    let score = 0;
+    let answeredQuestions = 0;
+    const totalQuestions = 10; // Fixed to 10 questions
+    
+    for (let i = 1; i <= totalQuestions; i++) {
+      const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selectedOption) {
+        score += parseFloat(selectedOption.value);
+        answeredQuestions++;
+      }
+    }
+    
+    const resultDiv = document.getElementById('result');
+    
+    if (answeredQuestions === 0) {
+      resultDiv.innerHTML = 'Please answer at least one question!';
+      resultDiv.className = 'result warning';
+      return;
+    }
+    
+    // Calculate percentage based on answered questions only
+    const maxPossibleScore = answeredQuestions; // 1 point per correct answer
+    const percentage = Math.max(0, (score / maxPossibleScore) * 100);
+    
+    let resultMessage = `
+      <strong>Quiz Results</strong><br>
+      Raw Score: ${score.toFixed(2)} points<br>
+      Questions Answered: ${answeredQuestions} / ${totalQuestions}<br>
+      Accuracy: ${percentage.toFixed(1)}%
+    `;
+    
+    if (percentage >= 80) {
+      resultMessage += '<br><br>Outstanding knowledge of Mughal history!';
+      resultDiv.className = 'result success';
+    } else if (percentage >= 60) {
+      resultMessage += '<br><br>Good work! You have solid understanding of Mughal history.';
+      resultDiv.className = 'result success';
+    } else if (percentage >= 40) {
+      resultMessage += '<br><br>Fair attempt. Consider reviewing the material again.';
+      resultDiv.className = 'result warning';
+    } else {
+      resultMessage += '<br><br>Keep studying! Mughal history has many fascinating details to learn.';
+      resultDiv.className = 'result warning';
+    }
+    
+    resultDiv.innerHTML = resultMessage;
+    
+    // Scroll to results
+    resultDiv.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
 </body>
 </html>
