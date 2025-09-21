@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mughal History Quiz (100 Questions)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; }
+    ul { list-style-type: none; padding-left: 0; }
+    li { margin: 5px 0; }
+    button { padding: 10px 20px; font-size: 16px; display: block; margin: 20px auto; }
+    .result { margin-top: 20px; font-size: 18px; text-align: center; }
+  </style>
+</head>
+<body>
+
+<h1>Mughal History Quiz (100 Questions)</h1>
+<form id="quizForm">
+  <!-- Questions will be dynamically added here -->
+  <button type="submit">Submit Quiz</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+// Function to shuffle an array (Fisher-Yates shuffle)
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Function to generate quiz from JSON data
+async function generateQuiz() {
+  try {
+    const response = await fetch('questions.json');
+    if (!response.ok) throw new Error('Failed to load questions');
+    const questionsData = await response.json();
+    const form = document.getElementById('quizForm');
+    const submitButton = form.querySelector('button[type="submit"]');
+    form.innerHTML = ''; // Clear form
+
+    questionsData.forEach((q, index) => {
+      const questionDiv = document.createElement('div');
+      questionDiv.className = 'question';
+
+      const p = document.createElement('p');
+      p.textContent = q.text;
+      questionDiv.appendChild(p);
+
+      const ul = document.createElement('ul');
+      const shuffledOptions = shuffleArray([...q.options]);
+
+      shuffledOptions.forEach(opt => {
+        const li = document.createElement('li');
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = `q${index + 1}`;
+        input.value = opt.value;
+        li.appendChild(input);
+        li.appendChild(document.createTextNode(opt.text));
+        ul.appendChild(li);
+      });
+
+      questionDiv.appendChild(ul);
+      form.appendChild(questionDiv);
+    });
+
+    form.appendChild(submitButton);
+
+    // Attach evaluation logic
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let score = 0;
+      const totalQuestions = questionsData.length;
+
+      for (let i = 1; i <= totalQuestions; i++) {
+        const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selectedOption) {
+          score += parseFloat(selectedOption.value);
+        } else {
+          document.getElementById('result').innerHTML = 'Please answer all questions!';
+          return;
+        }
+      }
+
+      document.getElementById('result').innerHTML = `Your score: ${score.toFixed(2)} out of ${totalQuestions}`;
+    });
+  } catch (error) {
+    document.getElementById('result').innerHTML = `Error: ${error.message}`;
+  }
+}
+
+// Run quiz generation on load
+window.onload = generateQuiz;
+</script>
+
+</body>
+</html>
